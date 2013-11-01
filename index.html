@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HTML5 Banner Boilerplate</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/preview.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <iframe src="banner.html?href=http%3A%2F%2Fdjango.is%2F%3Ffoo%3Dbar"></iframe>
+
+    <div id="urlencoder">
+        <h3>Url builder:</h3>
+
+        <div class="field">
+            <label>href:</label>
+            <input data-key="href" type="text" placeholder="http://...">
+        </div>
+
+        <div class="field">
+            <label>referer:</label>
+            <input data-key="referer" type="text" placeholder="http://... Default: Auto">
+        </div>
+
+        <div class="field">
+            <label>utm:</label>
+            <input data-key="utm" type="checkbox" value="">
+            <i>Default: false</i>
+        </div>
+
+        <div class="field">
+            <label>click_element:</label>
+            <input data-key="click_element" type="text" placeholder="document">
+        </div>
+
+        <div class="field">
+            <label>disable_click:</label>
+            <input data-key="disable_click" type="checkbox" value="">
+            <i>Default: false</i>
+        </div>
+
+        <div class="url"></div>
+    </div>
+
+    <script src="js/jquery-2.0.2.min.js"></script>
+    <script src="js/preview.js"></script>
+</body>
+
+</html>
