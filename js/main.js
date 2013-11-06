@@ -26,7 +26,7 @@
                 $el.css({backgroundPosition: pos});
 
                 i++;
-                if(i == (frames - 1)) {
+                if(i === (frames - 1)) {
                     window.clearInterval(sprite_animation);
                     if(callback) {
                         callback();
