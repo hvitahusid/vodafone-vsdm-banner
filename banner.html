@@ -19,71 +19,65 @@
 </head>
 
 <body>
-    <ul class="questions">
-        <li class="first">
-            <i>Fá þínir</i>
-            <i>starfsmenn</i>
-            <i>tölvupóst í</i>
-            <i>símann?</i>
-        </li>
+    <div id="content">
+        <ul class="questions">
+            <li>
+                <i>Eru vinnugögnin</i>
+                <i>í símanum</i>
+                <i>varin?</i>
+            </li>
+        </ul>
 
-        <li class="second">
-            <i>Eru gögnin</i>
-            <i>á símanum</i>
-            <i>varin?</i>
-        </li>
-    </ul>
+        <header>
+            <div class="center">
+                <div class="white-area" id="white1"></div>
+                <div class="white-area" id="white2"></div>
+                <div class="white-area" id="white3"></div>
+                <div class="red-center">
+                    <div class="red-area" id="red"></div>
+                </div>
 
-    <header>
-        <div class="center">
-            <div class="white-area" id="white1"></div>
-            <div class="white-area" id="white2"></div>
-            <div class="white-area" id="white3"></div>
-            <div class="red-center">
-                <div class="red-area" id="red"></div>
+                <div class="icon">
+                    <div class="glow"></div>
+                </div>
             </div>
 
-            <div class="icon">
-                <div class="glow"></div>
+            <div class="text">
+                <h1>Verndaðu þín viðskiptagögn með VSDM frá Vodafone</h1>
+                <h2>Nánar <i>›</i></h2>
+                <h3>Vodafone</h3>
+            </div>
+        </header>
+
+        <div id="phone">
+            <div class="clock"><span class="h"></span><span class="sep">:</span><span class="m"></span></div>
+            <div class="messages">
+                <ul>
+                    <li>
+                        <h1>Netpóstur</h1>
+                        <h2>Uppgjör bráðabirgðatölur</h2>
+                    </li>
+                    <li>
+                        <h1>Netpóstur</h1>
+                        <h2>Tilboðsgerð - Trúnaðarmál</h2>
+                    </li>
+                    <li class="active">
+                        <h1>Netpóstur</h1>
+                        <h2>Trúnaðarmál niðurstöður síðustu rannsókna …</h2>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="text">
-            <h1>Verndaðu þín viðskiptagögn með VSDM frá Vodafone</h1>
-            <h2>Nánar <i>›</i></h2>
-            <h3>Vodafone</h3>
+        <div id="icons">
+            <div class="icon email"><i>Öruggur tölvupóstur</i><br><b>varinn með lykilorði</b></div>
+            <div class="icon phone"><i>Verndun snjalltækja</i><br><b>og viðskiptagagna</b></div>
+            <div class="icon talk"><i>Stjórnborð veitir yfirsýn</i><br><b>yfir tæki og notkun</b></div>
         </div>
-    </header>
-
-    <div id="phone">
-        <div class="clock"><span class="h"></span><span class="sep">:</span><span class="m"></span></div>
-        <div class="messages">
-            <ul>
-                <li>
-                    <h1>Netpóstur</h1>
-                    <h2>Uppgjör bráðabirgðatölur</h2>
-                </li>
-                <li>
-                    <h1>Netpóstur</h1>
-                    <h2>Tilboðsgerð - Trúnaðarmál</h2>
-                </li>
-                <li class="active">
-                    <h1>Netpóstur</h1>
-                    <h2>Trúnaðarmál niðurstöður síðustu rannsókna …</h2>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="icons">
-        <div class="icon email"><i>Öruggur tölvupóstur</i><br><b>varinn með lykilorði</b></div>
-        <div class="icon phone"><i>Verndun snjalltækja</i><br><b>og viðskiptagagna</b></div>
-        <div class="icon talk"><i>Stjórnborð veitir yfirsýn</i><br><b>yfir tæki og notkun</b></div>
     </div>
 
     <script src="js/json3.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-2.0.2.min.js"><\/script>')</script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/purl.js"></script>
     <script src="js/html-banner.js"></script>
     <script src="js/TweenMax.min.js"></script>
@@ -103,27 +97,7 @@
     </script>
 
     <script>
-        // How to overwrite onClick parameter:
-        // HtmlBanner.prototype.onClick = function(el) {
-        //     console.log('onClick overwrite');
-        // };
-
-        // Note: All config options can be overwritten by parameters in url.
-        var html_banner = new HtmlBanner({
-            href: 'http://django.is/',  // Default: null
-            params: {  // Default: {}
-                // Can be overwritten by parsed parameters from href parameter in url.
-                utm_term: 'test',
-                utm_campaign: 'test'
-            },
-            referer: null,  // Default: null
-            utm: true,  // Default: false
-            click_element: document,  // Default: document
-            disable_click: false,  // Default: false
-            onClick: function() {  // Default: none
-                console.log('click', this);
-            }
-        });
+        var html_banner = new HtmlBanner({href: 'http://www.vodafone.is/fyrirtaeki'});
     </script>
 </body>
 

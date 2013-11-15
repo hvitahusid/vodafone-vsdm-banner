@@ -1,4 +1,12 @@
+$(document).ready(function() {
+    if(!Modernizr.csstransforms) {
+        $('body').addClass('still');
+        $('#content').remove();
+    }
+});
+
 $(window).bind("load", function() {
+    if(!Modernizr.csstransforms) {return;}
     //$('ul.questions li i').boxfit();
 
     // Update clock:
@@ -75,10 +83,10 @@ $(window).bind("load", function() {
     function doAnimation() {
         if(round === 0) {
             // Switch text
-            $('.questions li.first').css({opacity:1}).siblings().css({opacity:0});
-            setTimeout(function() {
-                $('.questions li.first').animate({opacity:0}).siblings().animate({opacity:1});
-            }, 4500);
+            //$('.questions li.first').css({opacity:1}).siblings().css({opacity:0});
+            //setTimeout(function() {
+            //    $('.questions li.first').animate({opacity:0}).siblings().animate({opacity:1});
+            //}, 4500);
 
             $('.messages').scrollInterval(3000, false, true, function() {
                 phoneOut.play(0);

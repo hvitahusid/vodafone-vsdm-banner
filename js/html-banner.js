@@ -71,7 +71,7 @@
             this.config.onClick.call(this);
         }
 
-        window.open(this.get_href(), '_NEW').focus();
+        window.open(this.get_href(), '_blank').focus();
     };
 
     global.HtmlBanner = HtmlBanner;
